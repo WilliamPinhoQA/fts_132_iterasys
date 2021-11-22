@@ -1,7 +1,9 @@
 import pytest
 
-
 # Cozinheiro - Definições
+import requests
+
+
 def somar_dois_numeros(num1, num2):
     return num1 + num2
 
@@ -23,6 +25,24 @@ def dividir_dois_numeros(num1, num2):
 
 def elevar_um_numero_pelo_outro(num1, num2):
     return num1 ** num2
+
+
+def post_pet_store(url, endpoint, json_path, json_config, headers):
+    response = requests.post(
+
+        url=f'{url}/{endpoint}',
+        data=open(f'{json_path}', f'{json_config}'),
+        headers=headers
+    )
+
+    return response
+
+
+def delete_pet_store(url, endpoint, id):
+    response = requests.delete(
+        url=f'{url}/{endpoint}/{id}'
+    )
+    return response
 
 
 # Calcular e testar a área de um quadrado
@@ -54,7 +74,8 @@ def calcular_volume_do_paralelograma(largura, comprimento, altura):
 def cube_volume(arest):
     return arest ** 3
 
-def cilinder_area(base_area,side_area):
+
+def cilinder_area(base_area, side_area):
     return (2 * base_area) + side_area
 
 

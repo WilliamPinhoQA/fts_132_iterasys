@@ -1,6 +1,7 @@
 import csv
 
 import pytest
+import requests
 
 from main import somar_dois_numeros, calcular_area_do_circulo, calcular_volume_do_paralelograma, cube_volume, \
     cilinder_area
@@ -79,6 +80,8 @@ def testar_calcular_volume_do_paralelograma(id, largura, comprimento, altura, re
     assert resultado_atual == int(resultado_esperado)
 
 
+
+
 @pytest.mark.parametrize('arest,expected_result', [
     (1, 1),
     (2, 8),
@@ -97,4 +100,3 @@ def test_cube_volume(arest, expected_result):
 def test_cilinder_area(base_area, side_area, expected_result):
     current_result = cilinder_area(int(base_area), int(side_area))
     assert current_result == int(expected_result)
-

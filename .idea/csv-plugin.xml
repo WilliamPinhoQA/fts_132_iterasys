@@ -10,7 +10,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\test\db\cube_mass.csv">
+        <entry key="\test\db\cilinder_mass.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
