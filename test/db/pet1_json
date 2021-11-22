@@ -1,0 +1,18 @@
+{
+  "id": 2345678,
+  "category": {
+    "id": 2345678,
+    "name": "dodoko"
+  },
+  "name": "dodoko",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 666,
+      "name": "klee bomb"
+    }
+  ],
+  "status": "available"
+}

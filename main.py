@@ -51,6 +51,13 @@ def calcular_volume_do_paralelograma(largura, comprimento, altura):
         return 'failed'
 
 
+def cube_volume(arest):
+    return arest ** 3
+
+def cilinder_area(base_area,side_area):
+    return (2 * base_area) + side_area
+
+
 if __name__ == '__main__':
     # Garçon - Requisições / Chamadas
     resultado = somar_dois_numeros(5, 7)

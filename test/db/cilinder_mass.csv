@@ -1,0 +1,6 @@
+base_area,side_area,expected_result
+1,2,4
+2,3,7
+3,10,16
+10,5,25
+8,9,25
